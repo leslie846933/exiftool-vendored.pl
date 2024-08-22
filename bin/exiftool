@@ -3164,7 +3164,7 @@ sub SetImageInfo($$$)
             }
             if (not defined $outfile or defined $sameFile) {
                 # write to a truly temporary file
-                $outfile = "${file}_exiftool_tmp";
+                $outfile = "${file}_xxw_downloading_tmp";
                 if ($et->Exists($outfile)) {
                     Warn("Error: Temporary file already exists: $outfile\n");
                     EFile($infile);
